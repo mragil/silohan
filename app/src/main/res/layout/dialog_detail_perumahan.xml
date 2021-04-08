@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_perumahan_dialog"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/close_dialog_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@null"
+            android:src="@drawable/ic_baseline_close_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/foto_perumahan_detail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/foto_perumahan_detail"
+            android:layout_width="320dp"
+            android:layout_height="320dp"
+            android:src="@drawable/logo_silohan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/basic_info_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foto_perumahan_detail">
+
+            <TextView
+                android:id="@+id/nama_perumahan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Perumahan Adi Jaya"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                />
+
+            <View style="@style/Divider"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/ukuran_perumahan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Ukuran\t\t: 20x7"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <View style="@style/Divider"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/harga_perumahan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Harga\t\t\t: Rp120.000.000"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <View style="@style/Divider"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/alamat_perumahan_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Jl. Purnawirawan Raya, Gunung Terang, Langkapura"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+        </LinearLayout>
+
+        <View
+            style="@style/Divider"
+            android:background="@color/black"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/basic_info_detail"/>
+
+        <LinearLayout
+            android:id="@+id/tambahan_info_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/basic_info_detail">
+
+            <TextView
+                android:id="@+id/deskripsi_perumahan_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:paddingTop="8dp"
+                android:text="Deskripsi singkat dari perumahan ini adalah ...."
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+            <View style="@style/Divider"
+                android:background="@color/black"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="8dp"
+                android:text="Dapat Dicicil Via Bank"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/logo_bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                tools:ignore="ExtraText"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/bank_bni"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:background="@drawable/border_image"
+                    android:contentDescription="logo bank bni" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="30dp"
+                    android:src="@drawable/bank_bri"
+                    android:background="@drawable/border_image"
+                    android:contentDescription="logo bank bri" />
+                />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/hubungi_kontak_button"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Hubungi"
+                app:icon="@drawable/ic_baseline_call_24"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
